@@ -20,7 +20,7 @@ dates = [] #x-axis
 #somedate = datetime.strptime('2018-07-01','%Y-%m-%d')
 
 for row in csvfile:
-    highs.append(row[5])
+    highs.append(int(row[5]))
     thedate = datetime.strptime(row[2],'%Y-%m-%d')
     dates.append(thedate)
 

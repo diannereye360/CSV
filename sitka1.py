@@ -14,7 +14,7 @@ for index, column_header in enumerate(header_row):
 highs = []
 
 for row in csvfile:
-    highs.append(row[5])
+    highs.append(int(row[5]))
 
 print(highs)
 
